@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape shape="rectangle">
+
+    <corners
+        bottomLeftRadius="6"
+        bottomRightRadius="6"
+        topLeftRadius="6"
+        topRightRadius="6"/>
+
+    <solid color="@color/background_material_light_low_opacity" />
+</shape>
