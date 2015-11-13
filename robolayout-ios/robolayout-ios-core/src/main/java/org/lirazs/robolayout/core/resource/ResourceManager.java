@@ -245,7 +245,10 @@ public class ResourceManager extends NSObject {
                     extension = "xml";
                 }
                 String identifierIdentifier = identifier.getIdentifier();
-                NSURL url = bundle.findResourceURL(identifierIdentifier.substring(0, identifierIdentifier.indexOf('.')), extension);
+                if(identifierIdentifier.contains("."))
+                    identifierIdentifier = identifierIdentifier.substring(0, identifierIdentifier.indexOf('.'));
+
+                NSURL url = bundle.findResourceURL(identifierIdentifier, extension);
 
                 if(url != null) {
                     result = ResourceValueSet.create(url);

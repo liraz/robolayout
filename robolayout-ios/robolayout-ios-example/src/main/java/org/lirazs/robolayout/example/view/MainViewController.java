@@ -38,8 +38,8 @@ public class MainViewController extends UIViewController implements UITableViewD
         tableView.setDelegate(this);
         getView().addSubview(tableView);
 
-        titles = ResourceManager.getCurrent().getStringArray("@array/test.values.main_menu_titles");
-        descriptions = ResourceManager.getCurrent().getStringArray("@array/test.values.main_menu_descriptions");
+        titles = ResourceManager.getCurrent().getStringArray("@array/values.main_menu_titles");
+        descriptions = ResourceManager.getCurrent().getStringArray("@array/values.main_menu_descriptions");
     }
 
     @Method(selector = "didPressToggleButton")

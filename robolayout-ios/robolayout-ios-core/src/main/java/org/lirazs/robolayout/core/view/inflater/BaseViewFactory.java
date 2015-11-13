@@ -117,7 +117,7 @@ public class BaseViewFactory implements ViewFactory {
             }
 
             if (result == null) {
-                result = (UIView) viewClass.getDeclaredConstructor(cArgWithMap).newInstance(attributes);
+                result = (UIView) viewClass.getDeclaredConstructor(cArgWithMap).newInstance(new Object[]{attributes});
             }
         }
 
