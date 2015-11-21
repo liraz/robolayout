@@ -48,26 +48,26 @@ public class GradientDrawable extends Drawable {
                 if(corners.getBottomLeft() > 0) {
                     context.addArc(originX + corners.getBottomLeft(),
                             originY + height - corners.getBottomLeft(),
-                            corners.getBottomLeft(), Math.PI, Math.PI / 2, 1);
+                            corners.getBottomLeft(), Math.PI, Math.PI / 2, true);
                 }
                 context.addLineToPoint(originX + width - corners.getBottomRight(), originY + height);
 
                 if(corners.getBottomRight() > 0) {
                     context.addArc(originX + width - corners.getBottomRight(),
                             originY + height - corners.getBottomRight(), corners.getBottomRight(),
-                            Math.PI / 2, 0.0, 1);
+                            Math.PI / 2, 0.0, true);
                 }
                 context.addLineToPoint(originX + width, originY + corners.getTopRight());
 
                 if(corners.getTopRight() > 0) {
                     context.addArc(originX + width - corners.getTopRight(),
-                            originY + corners.getTopRight(), corners.getTopRight(), 0.0, (-Math.PI / 2), 1);
+                            originY + corners.getTopRight(), corners.getTopRight(), 0.0, (-Math.PI / 2), true);
                 }
                 context.addLineToPoint(originX + corners.getTopLeft(), originY);
 
                 if(corners.getTopLeft() > 0) {
                     context.addArc(originX + corners.getTopLeft(), originY + corners.getTopLeft(),
-                            corners.getTopLeft(), (-Math.PI / 2), Math.PI, 1);
+                            corners.getTopLeft(), (-Math.PI / 2), Math.PI, true);
                 }
                 context.closePath();
                 break;

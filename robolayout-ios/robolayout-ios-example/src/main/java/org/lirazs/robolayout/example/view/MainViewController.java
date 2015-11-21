@@ -292,6 +292,26 @@ public class MainViewController extends UIViewController implements UITableViewD
     }
 
     @Override
+    public boolean canFocusRow(UITableView uiTableView, NSIndexPath nsIndexPath) {
+        return false;
+    }
+
+    @Override
+    public boolean shouldUpdateFocus(UITableView uiTableView, UITableViewFocusUpdateContext uiTableViewFocusUpdateContext) {
+        return false;
+    }
+
+    @Override
+    public void didUpdateFocus(UITableView uiTableView, UITableViewFocusUpdateContext uiTableViewFocusUpdateContext, UIFocusAnimationCoordinator uiFocusAnimationCoordinator) {
+
+    }
+
+    @Override
+    public NSIndexPath getIndexPathForPreferredFocusedView(UITableView uiTableView) {
+        return null;
+    }
+
+    @Override
     public void didDeselectRow(UITableView uiTableView, NSIndexPath nsIndexPath) {
 
     }
