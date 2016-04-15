@@ -5,8 +5,11 @@ RoboLayout is a port of Androids layout system and its drawable and resources fr
 This is a port of the following project to RoboVM:
 https://github.com/tomquist/iDroidLayout
 
-### THIS IS A PORT OF THE "iDroidLayout" PROJECT SO MOST OF THE DOCUMENTATION IS COPIED AND CHANGED FOR JAVA
-### PLEASE CONTRIBUTE TO "iDroidLayout" PROJECT AS WELL - AND ALL INSPIRATION WAS TAKEN FROM THIS PROJECT THUS DESERVES ITS CREDITS
+### RoboVM are closing
+https://robovm.com/robovm-winding-down/
+
+Library is still waiting for an open issue to be solved (that was opened by me) and apparently will never be solved:
+https://github.com/robovm/robovm/issues/1191
 
 Why?
 ----
